@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Georgia, Times;
+}
+.container {
+  max-width: 90vw;
+  height: 90vh; 
+  margin: 5vh auto;
+  /* max-width and min-height on parent and flex children doesnt accept bg-color  inline block doesnt work either*/
+  /* with max-width min height is ruining it in float */
+  /* display: flex; */
+}
+.child {
+  /* display: inline-block; give directly to childrens since with parent it didn't work*/
+  /* vertical-align: top;  */
+  /* margin: 5vh auto; */
+  float: left;
+  /* float apply without inline block */
+}
+.left {
+  /* for inline block i gave height and with in vh vw since parent is not available we can not use % */
+  width: 30%;
+  min-height: 80%;
+  background-color: rgb(142, 11, 11);
+  position: relative;
+  top: 10%;
+  left: 10%;
+  box-shadow: 5px 5px 9px rgb(137, 127, 127);
+  border-radius: 10px;
+  z-index: 10;
+}
+
+.right {
+  width: 70%;
+  min-height: 100%;
+  background-color: whitesmoke;
+  position: relative;
+  right: 10%;
+  /* z-index: -5; */
+  box-shadow: 5px 5px 10px grey;
+  border-radius: 10px;
+}
+.apple {
+  max-width: 85%;
+  position: absolute;
+  right: 30%;
+  top: 5%;
+}
+.downbar {
+  position: absolute;
+  top: 80%;
+  left: 0;
+  right: 0;
+  background-color: azure;
+  padding:10px 100px;
+  /* padding to center apple images */
+}
+.downbar img {
+  max-width: 50px;
+  height: 50px;
+  display: inline-block;
+  border-bottom: 2px solid gray;
+  border-right: 1px solid gray;
+  /* box shadow not working */
+  
+  /* display: inline-block;*/
+
+}
+.content {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+}
+.content img {
+  max-width: 50px;
+  height: 50px;
+  border: 1px;
+  display: inline-block;
+  border-radius: 5px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  margin-left: 10%;
+  margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 1rem;
+}
+h2 {
+  font-size: 1.3rem;
+}
+h2 span {
+  font-size: 4rem;
+  color: rgb(142, 11, 11);
+}
+ul {
+  line-height: 1.4rem;
+}
+.cartBtn {
+  padding: 0.8rem 1.4rem;
+  display: block;
+  outline:none;
+  margin-top: 1.3rem;
+  margin-left: -18px;
+  border-radius: 10px;
+  background-color: brown;
+  color: white;
+  border: none;
+  font-weight: 700;
+  box-shadow: 5px 5px 10px gray;
+
+
+}
+
+.cartBtn:hover {
+  color: brown;
+  background-color: white;
+}
+i {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin-top: 10px;
+}
+.fa-heart {
+  margin-left: 330px;
+}
+.fa-share-nodes {
+  margin-left: 20px;
+}
