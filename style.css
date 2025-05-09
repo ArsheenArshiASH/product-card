@@ -55,7 +55,7 @@
   left: 0;
   right: 0;
   background-color: azure;
-  padding:10px 100px;
+  padding:10px 100px; 
   /* padding to center apple images */
 }
 .downbar img {
@@ -133,3 +133,89 @@ i {
 .fa-share-nodes {
   margin-left: 20px;
 }
+
+@media only screen and (max-width:1530px){
+  .downbar img {
+     margin-left: 1rem;
+  }
+}
+@media only screen and (max-width:1300px){
+  .fa-heart {
+  margin-left: 240px;
+}
+}
+@media only screen and (max-width:1241px)
+{
+  .downbar{
+    padding: 10px 25px;
+  }
+  .downbar img {
+  max-width: 40px;
+  height: 40px;
+  }
+}
+@media only screen and (max-width:1120px){
+  .fa-heart {
+  margin-left:180px
+}
+}
+@media only screen and (max-width:1046px){
+  .apple{
+     top:10%
+  }
+  .downbar{
+    top:70%;
+    padding: 20px 0px;
+}
+.fa-heart {
+  margin-left:160px
+}
+}
+@media only screen and (max-width:875px){
+  .container{
+     width: 80vw;
+     height: 90vh;
+     margin: 1rem auto;
+  }
+  .fa-share-nodes{
+    margin-left: 100px;
+  }
+  .fa-heart {
+  margin-left: 160px;}
+
+  .child {
+    clear: both;
+  
+  }
+  .left{
+    width:60%;
+    height:70%;
+    left:20%;
+    top:15%;
+
+  }
+  .right{
+    width:80%;
+    height: 90%;
+    left:10%
+  }
+  .content {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+}
+.downbar{
+    top:70%;
+    padding: 20px 3.5rem;
+  }}
+  @media only screen and (max-width:700px){
+    i {
+      margin-top: 20px;
+    }
+    .fa-heart{
+      margin-left:50px;
+    }
+    .downbar{
+      padding: 30px 10px;
+    }
+  }
